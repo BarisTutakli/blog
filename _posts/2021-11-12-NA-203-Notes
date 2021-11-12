@@ -1,25 +1,35 @@
+---
+layout: post
+title: 2021-11-12-NA-203-Notes
+subtitle: Each post also has a subtitle
+gh-repo: https://github.com/baristutakli/baristutakli.github.io
+gh-badge: [star, fork, follow]
+tags: [Coding]
+comments: false
+---
+
 I created a **coding diary** blog to share my progress with you.
 #### 10/11/2021
 Firstly, we defined variables and printed theirs max values.
 Data types: *char *string  *decimal  *float  *double *sbyte  *float...<br />
 Here is a short version of data types table:<br/>
 
-| Type | Range |
-| ------------ | -------------|
+
+| Type | Ranger | 
+| :------ |:--- |
 | int | -2,147,483,648 to 2,147,483,647 |
 | byte | 0 to 255 |
 | sbyte | -128 to 127 |
 | short | -32,768 to 32,767 |
 | double | -1.79769313486232E+308 to 1.79769313486232E+308 |
 
-
-
 To learn the type of a variable use GetType() method for instance x.GetType()
-
+~~~
 var x= 55;
 var y =34.23d; 
 
 Console.ReadLine() function gets user inputs.
+~~~
 
 ## Reference Type
 These reference types hold a reference to the location of the data.
@@ -31,12 +41,13 @@ string: data type.<br /> When you define a value using **var** it retains the fi
 ## Operators
 
 ** +, -, *, /, % **
-```
+
+~~~
 int a, b, c, d, result;
 a = 2;b = 3; c = 4; d = 6;
 result = a+b*(c+d)-a;
 Console.WriteLine($"Result:{result}")
-```
+~~~
 
 
 ## Logical Operators
@@ -51,7 +62,7 @@ Operator | Description
 ## Bitwise Operators
 They work on bits.
 
-```
+~~~
 byte num1 = 5; //0101
 byte num2 = 3; //0011
 int control7 = num1 & num2;// =>    0001
@@ -60,26 +71,26 @@ byte control9 = (byte)~num2;
 Console.WriteLine(control7);
 Console.WriteLine(control8);
 Console.WriteLine(control9);
-```
+~~~
 
 ## Type conversions
 Here, we are converting a type to an other type. To give an example, we can convert an integer to a float.
 
-```
+~~~
 int num = 305;
 byte byteNum = (byte)intSayi;
 byte byteNum2 = Convert.ToByte(num)
-```
+~~~
 
 #### 11/11/2021
 -------------------------------------------------------------
-```
+~~~
 int intNum = 256;
 byte byteNum = (byte)intNum; // takes 8 rightest bits 
 Console.writline($"byte number: {byteNum}")
-```
+~~~
 To avoid loses during type casting,
-```
+~~~
 checked{
     int intNum = 256;
     byte byteNum = (byte)intNum;// takes 8 rightest bits 
@@ -91,40 +102,40 @@ checked{
     }
 
 } 
-```
+~~~
 
 ## Type casting with Parse method
 Here, we are parsing stings and attribute them to an int, double and short.
-```
+~~~
 int degisken1 = int.Parse("365");
 double degisken2 = double.Parse("34");
 short degisken3 = short.Parse("4321");
-```
+~~~
 
 ## Boxing and Unboxing
 object  veri tipi tüm tiplerin üst tipidir.
 #### Boxing
 This is the process of converting  a value type to an object.
 
-```
+~~~
 int limit = 120;
 object box = limit;
-```
+~~~
 #### Boxing with type conversion
-```
+~~~
 object box2 = (object)limit;
-```
+~~~
 #### unboxing
 To unboxe an object, it should be boxed and object type should be the same as the taget type.
 
-```
+~~~
 float floatNum = 94.5f;
-```
+~~~
 #### boxing
-```
-####object obj = floatNum ;
-```
+~~~
+object obj = floatNum ;
+~~~
 #### unboxing
-```
+~~~
 floatNum = (float)obj;
- ```
+~~~
