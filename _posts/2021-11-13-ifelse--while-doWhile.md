@@ -171,7 +171,7 @@ else
 }
 ```
 ### Exercise 5
-Here, the code counts the sign of the positive numbers and the negetive numbers. Then, It add them seperatly. 
+Here, the code counts the sign of the positive numbers and the negetive numbers. Then, It add them seperatly.<br> 
  ```c#
 int negativeSum = 0;
 int positiveSum = 0;
@@ -198,8 +198,8 @@ Console.WriteLine($"The number of positives: {numberOfPositives}\t Sum : {positi
     $"The number of negatives: {numberOfNegatives}\t Sum : {negativeSum} ");
 
  ```
-
- ### While loop
+ 
+### While loop
  To use while loop, we specify a condition, the block of code will continue to run again and again until the condition is met.
 
 ```c#
