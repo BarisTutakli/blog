@@ -2,7 +2,7 @@
 layout: post
 title: Coding challenge 2
 subtitle: Decision making, while and doWhile 
-tags: [c#]
+tags: [c#,loops,DecisionMaking, do,while,ifelse, programming]
 comments: false
 ---
 
@@ -199,7 +199,7 @@ Console.WriteLine($"The number of positives: {numberOfPositives}\t Sum : {positi
 
  ```
 
- ## while loop
+ ### While loop
  To use while loop, we specify a condition, the block of code will continue to run again and again until the condition is met.
 
 ```c#
@@ -271,7 +271,7 @@ while (count<100)
 }
 ```
 
-#### break
+### break
 If you read up to now, it's almost over. "break" helps you to stop a loop. Let's make an example.
 
 ### Exercise 4
@@ -296,8 +296,10 @@ while (check)
 
 }
 ```
-#### continue
+### continue
 "While" helps you to pass one step that you don't want to run this code. Let's make an example.<br>
+
+### Exercise 5
 ```c#
 int i = 1;
 while (i<=10)
@@ -316,4 +318,37 @@ while (i<=10)
     i++;
 
 }
+```
+
+### Do while loop
+The block of code will be executed once without checking the condition. Then if the condition is met, this block wil be executed repeatedly until the moment that the condition is not satisfied.
+
+### Exercise 6 
 ```c#
+int sum = 0;
+int s;
+
+do
+{
+    Console.WriteLine("Sayi : ");
+    s = Convert.ToInt32(Console.ReadLine());
+    sum += s;
+
+} while (s != 0);// after completing the block above, it will keep running until s = 0
+
+```
+
+### Exercise 6 
+
+
+```c#
+string posta;
+string parola;
+do
+{
+    Console.Write("E-posta : ");
+    posta = Console.ReadLine();
+    Console.Write("Parola : ");
+    parola = Console.ReadLine();
+} while (posta != "asdfgh@hotmail.com" || parola != "parola123");
+```
