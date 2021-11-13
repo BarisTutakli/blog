@@ -180,21 +180,140 @@ int numberOfPositives = 0;
 
 for (int i = 0; i < 5; i++)
 {
-    int sayi = Convert.ToInt32(Console.ReadLine());
-    if (sayi>0)
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num>0)
     {
         numberOfPositives += 1;
-        positiveSum += sayi;
+        positiveSum += num;
     }
-    else if (sayi<0)
+    else if (num<0)
     {
         numberOfNegatives += 1;
-        negativeSum += sayi;
+        negativeSum += num;
 
     }
 
 }
-Console.WriteLine($"Pozitif sayi adedi: {numberOfPositives}\t Pozitif sayıların toplam{positiveSum}\n" +
-    $"Negatif sayi adedi: {numberOfNegatives}\t Negatif sayıların toplamı: {negativeSum} ");
+Console.WriteLine($"The number of positives: {numberOfPositives}\t Sum : {positiveSum}\n" +
+    $"The number of negatives: {numberOfNegatives}\t Sum : {negativeSum} ");
 
  ```
+
+ ## while loop
+ To use while loop, we specify a condition, the block of code will continue to run again and again until the condition is met.
+
+```c#
+while (condition)
+	{
+
+	}
+```
+
+### Exercise 1
+Let's trying to print numbers from 1 to 10.
+
+```c#
+byte num = 1;
+while (num<= 10 )// loop will execute this block untill number = 10
+{
+    Console.WriteLine(num);
+    num ++;
+}
+```
+
+### Exercise 2
+
+The code will continue to run until the moment that user enters "q". During this process, the code sums the entered values. In all steps, we see the result.  <br>
+
+```c#
+string input = Console.ReadLine();
+int sum = 0;
+bool isParsable = Int32.TryParse(input, out _);
+while (input != "q")
+{
+    if(isParsable == true)
+    {
+        sum += int.Parse(input);
+                    
+    }
+    else
+    {
+        Console.WriteLine("You entered incorrectly!");
+               
+                  
+
+    }
+    Console.Write("Enter a number again: ");
+    input = Console.ReadLine();
+    isParsable = Int32.TryParse(input, out _);
+
+
+
+}
+Console.WriteLine($"Sum of inputs: {sum} 
+```
+### Exercise 3
+We print even and odd numbers from 1 to 100.
+```c#
+int count = 1;
+while (count<100)
+{
+    if(count%2 == 0)
+    {
+        Console.WriteLine($"{count} is an even.");
+                    
+    }
+    else
+    {
+        Console.WriteLine($"{count} is a odd.");
+    }
+    count++;
+}
+```
+
+#### break
+If you read up to now, it's almost over. "break" helps you to stop a loop. Let's make an example.
+
+### Exercise 4
+The loop will continue till you enter 19 or a multiple of 19. <br>
+```c#
+bool check = true;
+Console.Write("Enter a number :");
+int num = Convert.ToInt32(Console.ReadLine());
+while (check)
+{
+
+    if (num % 5 == 0)
+    {
+        Console.WriteLine("BOOM");
+    }
+    else if (num % 19 == 0)
+    {
+        break;
+    }
+    Console.Write("Enter a number:");
+    num = Convert.ToInt32(Console.ReadLine());
+
+}
+```
+#### continue
+"While" helps you to pass one step that you don't want to run this code. Let's make an example.<br>
+```c#
+int i = 1;
+while (i<=10)
+{
+    if (i==7)
+    {
+        i++;
+        continue;// we skip 7 and continue prinint till 9
+    }
+    else if (i==9)
+
+    {
+        break;
+    }
+    Console.WriteLine(i);
+    i++;
+
+}
+```c#
