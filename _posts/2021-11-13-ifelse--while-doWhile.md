@@ -77,20 +77,21 @@ for (int i = 0; i < 3; i++)
     {
         sum += num;
     }
-}
+
 Console.WriteLine($"Toplam : {sum}");
 ```
 
 ### Exercise 4
 
 Now, let's convert notes to letter grade. <br>
+
 | Percent Grade | Letter | 
 | :------ |:--- |
-| 0-49 | F |
-| 50-64 | D |
-| 65-69 | C |
-| 70-84 | B |
-| 85-100 | A |
+| 0;;9 | F |
+| 50;64 | D |
+| 65;69 | C |
+| 70;84 | B |
+| 85;100 | A |
         
 ```c#
 
