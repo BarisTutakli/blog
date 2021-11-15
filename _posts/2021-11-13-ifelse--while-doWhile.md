@@ -87,7 +87,7 @@ Now, let's convert notes to letter grade. <br>
 
 | Percent Grade | Letter | 
 | :------ |:--- |
-| 0;;9 | F |
+| 0;9 | F |
 | 50;64 | D |
 | 65;69 | C |
 | 70;84 | B |
