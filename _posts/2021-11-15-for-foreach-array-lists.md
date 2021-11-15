@@ -6,7 +6,7 @@ tags: [c#,Array,MultidimensionalArray, loops, for loop, foreach]
 comments: false
 ---
 
-Suppose that you need to create a collection of variables of the same type that's why you need an array. Arrays help you to store multiple values in a single variable. In my recent post, i shared with you ...making, while, doWhile. In this section, we will learn about arrays after learning for loop and for each loop.
+Suppose that you need to create a collection of variables of the same type that's why you need an array. Arrays help you to store multiple values in a single variable. In my recent post, i shared with you decision making, while, doWhile. In this section, we will learn about arrays after learning for loop and for each loop.
 
 
 
@@ -94,30 +94,30 @@ What does array mean? Let's discover it together! An array is just a collection 
 // type[] arr = new type[10]
 // type[] arr = {element1,element2,element3}
 ```
-// To create an array with 10 ints
+To create an array with 10 ints
 ```c#
 int[] numberArray = new int[10];
 int[] numbersArray = {1,2,3,4,5,6,7,8,9}; // This is an other way to do the same thing but there is not any number in the numbers array because we didn't added any int into it.
 ```
-// To create an array of strings
+To create an array of strings
 ```c#
 string[] strArray = new string[10];
 string[] strArray = {"1asd","2asd","3asd","4asd","5asd","6asd","7asd","8asd","9asd"};
 ```
 
-// To create an array of doubles
+To create an array of doubles
 
 ```c#
 double[] doubleArray = new double[10];
 double[] doubleArray = {1,2,3,4,5,6,7,8,9};
 ```
-// To access an elements
+To access an elements
 
 ```c#
 int[] numbersArray = {1,2,3,4,5,6,7,8,9}; 
 Console.WriteLine(numbersArray[3])
 ```
-// To create an array of different type objects
+To create an array of different type objects
 ```c#
 object[] mixedArray = new object[10]; 
 mixedArray[0] = 5;
