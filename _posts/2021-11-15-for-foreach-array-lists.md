@@ -43,7 +43,7 @@ for (int i = 0; i < num; i++)
 ```
 ### Exercise 1
 
-In this code, we get inputs from a user until he/she press "q".Then, we sum the negative numbers and positive numbers separately.
+In this code, we get inputs from the user until he/she press "q".Then, we sum the negative numbers and positive numbers separately.
 ```c#
 
 int negSum = 0;
