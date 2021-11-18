@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coding challenge 3
+title: Coding Challenge 3
 subtitle: Learning and practicing c# for loop, the foreach Loop, Arrays, Multidimensional Array 
 tags: [c#,Array,MultidimensionalArray, loops, for loop, foreach]
 comments: false

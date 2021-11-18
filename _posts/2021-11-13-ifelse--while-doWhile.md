@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coding challenge 2
+title: Coding Challenge 2
 subtitle: Decision making, while and doWhile 
 tags: [c#,loops,DecisionMaking, do,while,ifelse, programming]
 comments: false
