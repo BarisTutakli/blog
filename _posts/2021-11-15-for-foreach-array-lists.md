@@ -5,13 +5,15 @@ subtitle: Learning and practicing c# for loop, the foreach Loop, Arrays, Multidi
 tags: [c#,Array,MultidimensionalArray, loops, for loop, foreach]
 comments: false
 ---
-
-Suppose that you need to create a collection of variables of the same type that's why you need an array. Arrays help you to store multiple values in a single variable. In my recent post, i shared with you decision making, while, doWhile. In this section, we will learn about arrays after learning for loop and for each loop.
+<p style='text-align: justify;'>
+Suppose that you need to create a collection of variables of the same type that's why you need an array. Arrays help you to store multiple values in a single variable. In my recent post, i shared with you decision making, while, doWhile. In this section, we will learn about arrays after learning for loop and for each loop.</p>
 
 
 
 ## For Loop
-A for loop is similar to while loop but there is a difference. To use a for loop, you need to execute a specific number of times.
+<p style='text-align: justify;'>
+A for loop is similar to while loop but there is a difference. To use a for loop, you need to execute a specific number of times.</p>
+
 ### Exercise 1
 ```c#
 for (int i = 0; i < 10; i++)
@@ -19,9 +21,13 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine($"Num: {i}");
 }
 ```
-When you run this code, you will see the numbers from one to ten on the console in order.
+<p style='text-align: justify;'>
+When you run this code, you will see the numbers from one to ten on the console in order.</p>
+
 ### Exercise 2
-Write all the even numbers from one to an other number entered by an user.
+<p style='text-align: justify;'>
+Write all the even numbers from one to an other number entered by an user.</p>
+
 ```c#
 int num = Convert.ToInt32(Console.ReadLine());
 for (int i = 0; i < num; i++)
@@ -42,8 +48,9 @@ for (int i = 0; i < num; i++)
 }
 ```
 ### Exercise 1
+<p style='text-align: justify;'>
+In this code, we get inputs from the user until he/she press "q".Then, we sum the negative numbers and positive numbers separately.</p>
 
-In this code, we get inputs from the user until he/she press "q".Then, we sum the negative numbers and positive numbers separately.
 ```c#
 
 int negSum = 0;
@@ -79,7 +86,9 @@ for (; ;)
 }
 ```
 ## Foreach Loop
-Let's you to loop through elements in an array. In the next section, you will see how to use it.
+<p style='text-align: justify;'>
+Let's you to loop through elements in an array. In the next section, you will see how to use it.</p>
+
 ```c#
 foreach (var item in collection)
 	{
@@ -88,7 +97,8 @@ foreach (var item in collection)
 ```
 
 ## Arrays
-What does array mean? Let's discover it together! An array is just a collection of elements of the same type. 
+<p style='text-align: justify;'>
+What does array mean? Let's discover it together! An array is just a collection of elements of the same type. </p>
 
 ```c#
 // type[] arr = new type[10]
@@ -126,7 +136,7 @@ mixedArray[3]= 14.5f;
 Console.WriteLine(mixedArray[2]);
 ```
 
-In the code below, i tried to print all elements of numbersArray
+In the code below, i tried to print all elements of numbersArray.
 ```c#
 int[] numbersArray = {1,2,3,4,5,6,7,8,9}; 
 for (int i = 0; i < 10; i++)
@@ -154,7 +164,8 @@ for (int i = 0; i < names.Length; i++)
 
 
 ### Exercise 2
-Generating 10 numbers randomly, adding them into array and printing all the elements of this array. 
+<p style='text-align: justify;'>
+Generating 10 numbers randomly, adding them into array and printing all the elements of this array. </p>
 
 ```c#
 int[] arr = new int[10];
@@ -178,7 +189,7 @@ int[] numbers = { 10, 20, 30, 40, 10, 14, 10, 20, 30 };
 int count10 =puanlar.Count(sayi=> sayi == 10)
 Console.WriteLine($"{count10} is repeated 10 times in the array 10");
 ```
-If you want to learn the index of this repeatitions, you can use **Array.indexOf()**
+If you want to learn the index of this repeatitions, you can use <b>Array.indexOf()</b>
 
 ### Exercise 4
 ```c#
@@ -194,7 +205,7 @@ for (int i = 0; i < count10; i++)
 }
 ```
 
-**when Array.indexOf() couldn't find the element in the array, it returns -1**<br>
+<b>when Array.indexOf() couldn't find the element in the array, it returns -1</b> <br>
 
 How to Copy an array and copy one part of an array?<br>
 ```c#

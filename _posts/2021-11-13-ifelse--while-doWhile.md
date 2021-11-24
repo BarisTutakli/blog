@@ -5,9 +5,9 @@ subtitle: Decision making, while and doWhile
 tags: [c#,loops,DecisionMaking, do,while,ifelse, programming]
 comments: false
 ---
-
+<p style='text-align: justify;'> 
 Let's learn if statement, else statement and do some coding exercises. Then, i will continue by learning and practicing "Do While".<br>
-Let's start with a real world example. Consider that you have two pens, one is red and the other is black. if you pick red one, your theacher won't read your essay. What would you do? Of course, you will complete your writing by using the black pen.
+Let's start with a real world example. Consider that you have two pens, one is red and the other is black. if you pick red one, your theacher won't read your essay. What would you do? Of course, you will complete your writing by using the black pen.</p>
 
 ```c#
 Console.WriteLine("Read the rules before writing an article");
@@ -41,8 +41,9 @@ else
 ```
 
 ### Exercise 2
+<p style='text-align: justify;'> 
+Here, i tried to get two numbers from user. Then, i write the bigger one and the smaller using Console.WriteLine()<br></p>
 
-Here, i tried to get two numbers from user. Then, i write the bigger one and the smaller using Console.WriteLine();<br>
 ```c#
 Console.Write("Enter a number :");
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -64,8 +65,9 @@ else
 ```
 
 ### Exercise 3
+<p style='text-align: justify;'> 
 Write a program that adds and prints the three numbers less than 100 entered from the keyboard.
-In this section, ı ask user to enter three numbers. then, if the numbers is less than 100, ı add and print them. <br>
+In this section, ı ask user to enter three numbers. then, if the numbers is less than 100, ı add and print them. <br></p>
 
 ```c#
 int sum = 0;
@@ -223,8 +225,8 @@ while (num<= 10 )// loop will execute this block untill number = 10
 ```
 
 ### Exercise 2
-
-The code will continue to run until the moment that user enters "q". During this process, the code sums the entered values. In all steps, we see the result.  <br>
+<p style='text-align: justify;'> 
+The code will continue to run until the moment that user enters "q". During this process, the code sums the entered values. In all steps, we see the result.</p>  <br>
 
 ```c#
 string input = Console.ReadLine();
@@ -273,7 +275,8 @@ while (count<100)
 ```
 
 ### break
-If you read up to now, it's almost over. "break" helps you to stop a loop. Let's make an example.
+<p style='text-align: justify;'> 
+If you read up to now, it's almost over. "break" helps you to stop a loop. Let's make an example.</p>
 
 ### Exercise 4
 The loop will continue till you enter 19 or a multiple of 19. <br>
@@ -322,7 +325,8 @@ while (i<=10)
 ```
 
 ### Do while loop
-The block of code will be executed once without checking the condition. Then if the condition is met, this block wil be executed repeatedly until the moment that the condition is not satisfied.
+<p style='text-align: justify;'> 
+The block of code will be executed once without checking the condition. Then if the condition is met, this block wil be executed repeatedly until the moment that the condition is not satisfied.</p>
 
 ### Exercise 6 
 ```c#
