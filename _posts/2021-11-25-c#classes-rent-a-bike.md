@@ -11,7 +11,7 @@ We talked about fields, properties, classes, encapsulation, getter and setter me
 
 ## Rent a Bike
 <p style='text-align: justify;'>
- We need a User class, a Bicycle class, a Renting class.</br> Each user should have a first name, last name and an id. User class: <b>(private int)</b>id, <b>(private string)</b>first name, <b>(private string)</b>last name, getters and setters. Each bicycle has an id, a brand name, a model, a rim and gears. Bicycle class: <b>(private int)</b>id, <b>(private string)</b>brand name, <b>(private string)</b>model, <b>(private string)</b>rim size, <b>(private int)</b>gears, getters and setters. The last class is  a renting class that has the properties following. Renting class: bicycle, userName, time, price, starting time, getters, setters, StartRenting(), EndRenting(), DebtCalculator(), ToString().</br>
+ We need a User class, a Bicycle class, a Renting class.<br> Each user should have a first name, last name and an id. User class: <b>(private int)</b>id, <b>(private string)</b>first name, <b>(private string)</b>last name, getters and setters. Each bicycle has an id, a brand name, a model, a rim and gears. Bicycle class: <b>(private int)</b>id, <b>(private string)</b>brand name, <b>(private string)</b>model, <b>(private string)</b>rim size, <b>(private int)</b>gears, getters and setters. The last class is  a renting class that has the properties following. Renting class: bicycle, userName, time, price, starting time, getters, setters, StartRenting(), EndRenting(), DebtCalculator(), ToString().<br>
 <b>After explaining c# abstract classes and interfaces to you, we will develop this project again using abstract classes and interfaces.</b></p>
 
 
