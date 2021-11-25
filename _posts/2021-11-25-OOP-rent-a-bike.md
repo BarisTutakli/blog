@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Coding Challenge 7
-subtitle: Learning C# Classes 
+title: Coding Challenge 8
+subtitle: C# exercises - Rent a Bike 
 tags: [c#,object oriented programming, oop, constructor, encapsulation,fields, properties, , Rent a bike,]
 comments: false
 ---
