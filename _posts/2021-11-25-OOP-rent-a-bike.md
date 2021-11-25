@@ -9,20 +9,16 @@ comments: false
 
 
 <p style='text-align: justify;'>
-We talked about fields, properties, classes, encapsulation, getter and setter methods. Now it's time to do some exercises. Let's create a basic project named Rent a Bike. We need a User class, a Bicycle class, a Renting class. </br></p> 
-<p style='text-align: justify;'>
-Each user should have a first name, last name and an id. User class: (private int)id, (private string)first name, (private string)last name, getters and setters.</br></p> 
-<p style='text-align: justify;'>
-Each bicycle has an id, a brand name, a model, a rim and gears. Bicycle class: (private int)id, (private string)brand name, (private string)model, (private string)rim size, (private int)gears, getters and setters.</br></p> 
-<p style='text-align: justify;'>
-The last class is  a renting class that has the properties following. Renting class: bicycle, userName, time, price, starting time, getters, setters, <b>StartRenting()</b>, <b>EndRenting()</b>, <b>DebtCalculator()</b>, <b>ToString()</b>.Don't forget to read the comments inside the code blocks!</p>
-<p style='text-align: justify;'>
-<b>After explaining c# abstract classes and interfaces to you, we will develop this project again using abstract classes and interfaces.</br>
+We talked about fields, properties, classes, encapsulation, getter and setter methods. Now it's time to do some exercises. Let's create a basic project named Rent a Bike. We need a User class, a Bicycle class, a Renting class. Each user should have a first name, last name and an id. User class: (private int)id, (private string)first name, (private string)last name, getters and setters. Each bicycle has an id, a brand name, a model, a rim and gears. Bicycle class: (private int)id, (private string)brand name, (private string)model, (private string)rim size, (private int)gears, getters and setters. The last class is  a renting class that has the properties following. Renting class: bicycle, userName, time, price, starting time, getters, setters, <b>StartRenting()</b>, <b>EndRenting()</b>, <b>DebtCalculator()</b>, <b>ToString()</b>.
+<b>After explaining c# abstract classes and interfaces to you, we will develop this project again using abstract classes and interfaces.</b>
 </p> 
 
 ## Rent a Bike
+<p style='text-align: justify;'>
+Do not forget to read the comments inside the code blocks!</p> 
 
 #### Program.cs
+
 ```c#
 class Program {
     static void Main(string[] args)
@@ -148,6 +144,7 @@ class Bicycle {
 }
 
 ```
+
 ####  Renting Class
 
 ```c#
