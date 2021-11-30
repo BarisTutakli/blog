@@ -90,11 +90,11 @@ class Program {
 ```
 
 Output:<br>
-I am a person and my name is Bob
-I am a person and my name is Dennis
-Dennis is also a worker
-I am a person and my name is Steve
-Steve is also a manager
+I am a person and my name is Bob<br>
+I am a person and my name is Dennis<br>
+Dennis is also a worker<br>
+I am a person and my name is Steve<br>
+Steve is also a manager<br>
  
 ## C# Abstraction
 <p style='text-align: justify;'>
@@ -105,7 +105,6 @@ Consider that there are a man and a woman who can not be able to have a child be
 ```c#
 abstract class Donnor
 {
-  // This is an Abstract method
   public abstract void Learn();
   // Regular method
   public void Cry()
@@ -133,7 +132,6 @@ class Program
     myBaby.Cry();  // Call the regular method
   }
 }
-
 ```
 
 ## C# interface
