@@ -100,8 +100,9 @@ Steve is also a manager
 <p style='text-align: justify;'>
 Abstraction can be made by abstract classes or interfaces. The important thing is that you can not create an instance of them. To use an abstract class, another class should inherit it. If you declare an abstract class with the keyword sealed, it cannot be inherited. To clear up, i'm gonna try to explain it in a different way.<p>
 <p style='text-align: justify;'>
-Consider that there are a man and a woman who can not be able to have a child because the man has health problems. However they want to give birth a baby that's why they found a sperm donor to get her pregnant. Now, there are an abstract father(abstract class) of the baby and one real mother(base class) and her husband(interface). The child inherits some properties from the donnor and her mother. As the baby grows, he/she imitates her mother and father. Here we see that child's behavior changes(the intent of abstract method change in the child class). They educate the child the way they want. Now let's create these classes in c#.
-</p>
+Consider that there are a man and a woman who can not be able to have a child because the man has health problems. However they want to give birth a baby that's why they found a sperm donor to get her pregnant. Now, there are an abstract father(abstract class) of the baby and one real mother(base class) and her husband(interface). The child inherits some properties from the donnor and her mother. As the baby grows, he/she imitates her mother and father. Here we see that child's behavior changes(the intent of abstract method change in the child class). They educate the child the way they want. Now let's create these classes in c#.</p>
+
+
 
 ```c#
 abstract class Donnor
@@ -138,9 +139,11 @@ class Program
 ```
 
 ## C# interface
+
 <p style='text-align: justify;'>
-An interface contains only abstract methods and properties. To recognize an interface, people start with the letter "I" at the beginning of an interface name. There ia an obvious difference between an abstract class and an interface. A class can inherit many interfaces, but not more than one abstract class.</p>
-I created three interfaces below.
+An interface contains only abstract methods and properties. To recognize an interface, people start with the letter "I" at the beginning of an interface name. There ia an obvious difference between an abstract class and an interface. A class can inherit many interfaces, but not more than one abstract class. I created three interfaces below.</p>
+
+#### ISpeak, IRun and IEat
 
 ```c#
 interface ISpeak 
@@ -156,9 +159,12 @@ interface IEat
   void Eating(); // interface method
 }
 ```
+
+#### Test
 Test Class inherits ISpeak, IRun and IEat. 
+
 ```c#
-class Test : ISpeak, IRun, IEat 
+class  Test : ISpeak, IRun, IEat 
 {
   public void Speaking() 
   {
@@ -175,7 +181,9 @@ class Test : ISpeak, IRun, IEat
 
 }
 ```
-program.cs
+
+#### program.cs
+
 ```c#
 class Program 
 {
