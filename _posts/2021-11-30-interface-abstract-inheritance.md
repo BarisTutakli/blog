@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Coding Challenge 9
-subtitle: C# İnterface, Abstraction, Inheritance and Polymorphism
+subtitle: C# Interface, Abstraction, Inheritance and Polymorphism
 tags: [c#,object oriented programming, oop, constructor, İnterface, Abstract, İnheritance, Polymorphism]
 comments: false
 ---
 
 <p style='text-align: justify;'>
-Why should use interfaces? How to define interfaces? how could a class inherit from another class? What is an abstract class? When ı start learning inheritance, interfaces, abstract classes, i google it a lot. However, i saw that many sites use similiar examples. They are using either car class or animal class to explain inheritance and interfaces or abstract classes. Using them in different projects does not show how to use them in one project. This situation made me confused. So, i will do my best to clear your mind using different exercises.</p>
+Why should use interfaces? How to define interfaces? how could a class inherit from another class? What is an abstract class? When ı start learning inheritance, interfaces, abstract classes, i google it a lot. However, i saw that many sites use similiar examples. They are using either car class or animal class to explain inheritance and interfaces or abstract classes. Using them in different projects does not show how to use them in one project.In the beginning this situation made me confused too. So, i will do my best to clear your mind using different exercises.</p>
 
 ## C# Inheritance
 
