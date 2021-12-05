@@ -104,7 +104,6 @@ Consider that there are a man and a woman who can not be able to have a child be
 ```c#
 abstract class Donnor
 {
-  // This is an Abstract method
   public abstract void Learn();
   // Regular method
   public void Cry()
@@ -138,7 +137,6 @@ class Program
     myBaby.Cry();  // Call the regular method
   }
 }
-
 ```
 
 ## C# interface
