@@ -90,16 +90,15 @@ class Program {
 ```
 
 Output:<br>
-I am a person and my name is Bob
-I am a person and my name is Dennis
-Dennis is also a worker
-I am a person and my name is Steve
-Steve is also a manager
+I am a person and my name is Bob<br>
+I am a person and my name is Dennis<br>
+Dennis is also a worker<br>
+I am a person and my name is Steve<br>
+Steve is also a manager<br>
  
 ## C# Abstraction
 <p style='text-align: justify;'>
-Abstraction can be made by abstract classes or interfaces. The important thing is that you can not create an instance of them. To use an abstract class, another class should inherit it. If you declare an abstract class with the keyword sealed, it cannot be inherited. To clear up, i'm gonna try to explain it in a different way.<p>
-<p style='text-align: justify;'>
+Abstraction can be made by abstract classes or interfaces. The important thing is that you can not create an instance of them. To use an abstract class, another class should inherit it. If you declare an abstract class with the keyword sealed, it cannot be inherited. To clear up, i'm gonna try to explain it in a different way.
 Consider that there are a man and a woman who can not be able to have a child because the man has health problems. However they want to give birth a baby that's why they found a sperm donor to get her pregnant. Now, there are an abstract father(abstract class) of the baby and one real mother(base class) and her husband(interface). The child inherits some properties from the donnor and her mother. As the baby grows, he/she imitates her mother and father. Here we see that child's behavior changes(the intent of abstract method change in the child class). They educate the child the way they want. Now let's create these classes.</p>
 
 ```c#
@@ -114,7 +113,10 @@ abstract class Donnor
   }
 }
 
-// Derived class (inherit from Animal)
+```
+<p style='text-align: justify;'> <b>Derived class (inherits from Animal)</b></p>
+
+```c#
 class Baby : Donnor, Father
 {
   public override void Learn()
@@ -123,7 +125,10 @@ class Baby : Donnor, Father
     Console.WriteLine("I want to learn play piano like my father:)");
   }
 }
+```
+#### Program.cs
 
+```c#
 class Program
 {
   static void Main(string[] args)
@@ -180,7 +185,7 @@ class  Test : ISpeak, IRun, IEat
 }
 ```
 
-#### program.cs
+#### Program.cs
 
 ```c#
 class Program 
