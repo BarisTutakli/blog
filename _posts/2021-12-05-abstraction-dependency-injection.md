@@ -163,7 +163,7 @@ public class EfStudentDal : IStudentDal
 }
 ```
 <p style='text-align: justify;'>
-Now it's your turn. Create an EfnstructoralDal. Then, visit my GitHub repository to see the whole project. </p>
+Now it's your turn:) Create an EfInstructoralDal. Then, visit my GitHub repository to see the whole project. </p>
 <a></a>
 
 <a href="https://github.com/baristutakli/">Visit my Github account</a>
