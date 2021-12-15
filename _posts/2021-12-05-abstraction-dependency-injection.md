@@ -2,12 +2,12 @@
 layout: post
 title: Coding Challenge 10
 subtitle: C# Interfaces, abstraction and N-Tier Architecture
-tags: [c#,object oriented programming, solid principles,factory pattern,interface, Abstract, İnheritance, school management system]
+tags: [c#,object oriented programming, solid principles,refactoring,interface, Abstract, İnheritance, school management system]
 comments: false
 ---
 
 <p style='text-align: justify;'>
-Today, we are going to create a project named School Management System by applying SOLID Principles. Then, we will use Factory pattern. 
+Today, we are going to create a project called School Management System by applying SOLID Principles. Then, we'll refactor the code step by step. 
 First we created a blank solution to implement layered architecture. After creating a blank solution, open "Solution Explorer" and right-click on the project and add the following class libraries:</p>
 
 * Business
@@ -52,7 +52,7 @@ public class Instructor:IEntity
 }
 ```
 
-### DataAccess 
+### DataAccess Layer and SOLID principles
 <p style='text-align: justify;'>
 Before creating interfaces, it's important to understand why we add only single responsibility to a class or to a method. Let's discover Solid principles together!
 Imagine that you created a software project and it is getting bigger and bigger, after a while you notice that you repeat yourself or write the same codes in similar classes or one change impacts other codes. 
@@ -71,8 +71,6 @@ What should we have done to avoid these repetitions? These problems have been th
 <b>Liskov substitıtion principle</b> is named by a woman mathematician Barbara Liskov. This principle says that every subclass or derived class should be exchangeable for their base or parent class. <br>
 <b>Interface segregation principle</b>: It is used to avoid unnecessary methods or properties in a class. A client should not be forced to depend on methods they do not use.<br>
 <b>Dependency inversion principle</b>: We try to decrease dependencies between high-level-module and low-level-module. The high-level module must not depend on the low-level module, but they should depend on abstractions.</p>
-
-
 
 
 <p style='text-align: justify;'>
@@ -163,7 +161,7 @@ public class EfStudentDal : IStudentDal
 }
 ```
 <p style='text-align: justify;'>
-Now it's your turn:) Create an EfInstructoralDal. Then, visit my GitHub repository to see the whole project. </p>
-<a></a>
+Now it's your turn:) Create an EfInstructorDal. Then, visit my GitHub repository to see the whole project. </p>
 
-<a href="https://github.com/baristutakli/">Visit my Github account</a>
+
+<a href="https://github.com/baristutakli/SchoolManagementSystem">Visit School Management System Repository</a>
