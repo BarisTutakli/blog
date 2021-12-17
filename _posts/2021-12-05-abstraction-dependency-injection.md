@@ -22,7 +22,7 @@ When you create all classes without layers, It will be hard to manage all files.
 
 ### Entities
 <p style='text-align: justify;'>
-We start creating  two entities named <b>Student</b> Class and <b>Instructor</b> Class. Each of them has the properties belove. In this project, we do not use Entity framework.IEntity is just an interface.</p>
+We start creating  two entities named <b>Student</b> Class and <b>Instructor</b> Class. Each of them has the properties belove.IEntity is just an interface.</p>
 
 #### Student Class
 ```c#
@@ -165,3 +165,4 @@ Now it's your turn:) Create an EfInstructorDal. Then, visit my GitHub repository
 
 
 <a href="https://github.com/baristutakli/SchoolManagementSystem">Visit School Management System Repository</a>
+
