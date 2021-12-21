@@ -14,7 +14,7 @@ I answered this question above.
 
 #### Are there any real world examples related to data structures?
 <p style='text-align: justify;'>Yep, there are many real world examples. Let's look at the image belove and try to get the bottom ball? To get the bottom ball, we takes the other balls out. Then, we get the bottom ball. When you use the stack structure, it will behave like you did.  </p>
-<img src="https://github.com/baristutakli/baristutakli.github.io/tree/master/assets/img/stack.jpg" alt="Stack">
+<img src="https://github.com/baristutakli/baristutakli.github.io/blob/master/assets/img/stack.jpg" alt="Stack">
 
 #### What does the stack mean?
 <p style='text-align: justify;'>
@@ -23,7 +23,7 @@ In stack data structure, the first element stored will be removed last. It appli
 #### What does the  queue mean?
 <p style='text-align: justify;'>
 Let's look at the image belove again and try to get the top ball? To get the top ball, we takes the top ball:) we applied the first-in, first-out principle. The queue structure do the same thing. The item that goes in first is the item that comes out first.</p>
-<img src="https://github.com/baristutakli/baristutakli.github.io/tree/master/assets/img/stack.jpg" alt="Queue">
+<img src="https://github.com/baristutakli/baristutakli.github.io/blob/master/assets/img/stack.jpg" alt="Queue">
 <p style='text-align: justify;'>
 For another example, let's say you go to have your car washed, the car of the person in the first line is washed first. </p>
 
