@@ -141,13 +141,14 @@ For instance, here i get data of a specified product having id = 2.</p>
 It's similar to GET method, but the response does not have a message-body. It's often used to retrieve meta-data. Meta-data might contain information about keywords, page description, author, viewport...
 This is an example of response headers:
 
- content-encoding: gzip 
- content-type: text/plain; charset=utf-8 
- date: Thu13 Jan 2022 07:46:51 GMT 
- server: Microsoft-IIS/10.0 
- transfer-encoding: chunked 
- vary: Accept-Encoding 
+ content-encoding: gzip </br>
+ content-type: text/plain; charset=utf-8 </br>
+ date: Thu13 Jan 2022 07:46:51 GMT </br>
+ server: Microsoft-IIS/10.0 </br>
+ transfer-encoding: chunked </br>
+ vary: Accept-Encoding </br>
  x-powered-by: ASP.NET 
+ 
 </p>
 
 ##### PUT
@@ -199,7 +200,7 @@ It's used to update partial informations from a specific resource.
 <code>return Ok()</code>
 
 400:  If a client enters an invalid request, we see this code.
-<code>return BadRequest()</code>
+<code>return BadRequest()</code></br>
 401: If a unauthoried user try to access a resource, the server usually returns this code. I added an example of the way that we return the status 401 code.
 
 ```c#
@@ -213,7 +214,7 @@ It's used to update partial informations from a specific resource.
         return Ok();
     }
 ```
- isn’t authenticated.
+
 403: If a use is auhenticated, but it's not allowed to  access a resource. Suppose that a user is not allowed to access vip panel, the server can return the status 403 code as below.
 
 ```c#
