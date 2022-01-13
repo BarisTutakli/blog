@@ -91,11 +91,11 @@ It ıs an architecture style that has following constrains:
 <li>Layered system</li>
 </ul> 
 </p>
-[Best-practices/api-design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
-[rest-api-standards-do-they-even-exist](https://blog.stoplight.io/rest-api-standards-do-they-even-exist)
+
+[Best-practices/api-design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design) 
+[rest-api-standards-do-they-even-exist](https://blog.stoplight.io/rest-api-standards-do-they-even-exist) 
 [Best-practices-for-rest-api-design](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
 
-https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
 
 #### Uniform Resource Identifier (URI)
 <p style='text-align: justify;'>
@@ -118,15 +118,20 @@ Let's start learning some key words like idempotent, Safe, Cacheable...</p>
 
 
 #### Idempotent
+>An HTTP method is idempotent if an identical request can be made once or several times in a row with the same effect while leaving the server in the same state.
+
 <p style='text-align: justify;'>
 If the result does not change when you make one or more requests, we call this HTTP method idempotent.
- Here are some examples of idempotent methods: GET, HEAD, PUT, DELETE, OPTIONS, TRACE.
->An HTTP method is idempotent if an identical request can be made once or several times in a row with the same effect while leaving the server in the same state. </p>
+ Here are some examples of idempotent methods: GET, HEAD, PUT, DELETE, OPTIONS, TRACE.</p>
+ 
+
 
 ##### GET
 <p style='text-align: justify;'>
-The HTTP GET method is used to retrieve data from a specified resource. For security reasons, do not use GET method to send pieces of information like email and password because your email and password will be shown on the search area as below.
-For instance, here i get data of a specified product having id = 2.</p>
+The HTTP GET method is used to retrieve data from a specified resource. For security reasons, do not use GET method to send pieces of information like email and password because your email and password will be shown on the search area as below.<br>
+<code>https://www.example.com/login/?username=baris&password=1234</code>
+
+If a client requests a product having id=2, the server will return the data below as a response.</p>
 
 <code>
 {
@@ -139,7 +144,7 @@ For instance, here i get data of a specified product having id = 2.</p>
 
 ##### HEAD
 <p style='text-align: justify;'>
-It's similar to GET method, but the response does not have a message-body. It's often used to retrieve meta-data. Meta-data might contain information about keywords, content-type, page description, author, viewport,content-encoding...
+It's similar to GET method, but the response does not have a message body. It's often used to retrieve meta-data. Meta-data might contain information about keywords, content-type, page description, author, viewport, content-encoding...
 </p>
 
 ##### PUT
@@ -164,7 +169,7 @@ It ıs used to delete a specified resouces.
 #### Non Idempotent
 
 ##### POST
-The HTTP POST is used to submit data to the server. If you create a new object, you can return HTTP 201 status code.
+The HTTP POST is used to send data to the server. If you create a new object, you can return HTTP 201 status code.
 
 <code>
 [HttpPost]
@@ -191,7 +196,7 @@ It's used to update partial informations from a specific resource.
 
 400:  If a client enters an invalid request, we see this code.
 <code>return BadRequest()</code></br>
-401: If a unauthoried user try to access a resource, the server usually returns this code. I added an example of the way that we return the status 401 code.
+401: If a unauthorised user tries to access a resource, the server usually returns this code. I added an example of the way that we return the status 401 code.
 
 ```c#
 [HttpGet("/panel/{authorization}")]
@@ -205,7 +210,7 @@ It's used to update partial informations from a specific resource.
     }
 ```
 
-403: If a use is auhenticated, but it's not allowed to  access a resource. Suppose that a user is not allowed to access vip panel, the server can return the status 403 code as below.
+403: If a user is auhenticated, but it's not allowed to access a resource. Suppose that a user is not allowed to access vip panel, the server can return the status 403 code as below.
 
 ```c#
 [HttpGet("/panel/vip/{authorization}")]
