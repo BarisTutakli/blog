@@ -62,7 +62,7 @@ XML is the abbreviation of extensible markup language. It ıs also store and tra
 </students>
 ```
 
-[Standarts and extendions](https://www.ibm.com/docs/en/i/7.1?topic=introduction-xml-standards-extensions#rzamjintrostandards__Namespaces)
+[Standarts and extensions](https://www.ibm.com/docs/en/i/7.1?topic=introduction-xml-standards-extensions#rzamjintrostandards__Namespaces)
 
 #### gRPC
 <p style='text-align: justify;'>
@@ -71,7 +71,7 @@ It is an open-source, high-performance framework that makes it easier for us to 
 [Details](https://grpc.io/)
 [Details on Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/grpc)
 [Protocol-buffers](https://developers.google.com/protocol-buffers/docs/overview)
-https://www.gencayyildiz.com/blog/grpc-nedir-ne-amacla-ve-nasil-kullanilir/
+
 
 
 #### Soap
@@ -91,9 +91,10 @@ It ıs an architecture style that has following constrains:
 <li>Layered system</li>
 </ul> 
 </p>
+[Best-practices/api-design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
+[rest-api-standards-do-they-even-exist](https://blog.stoplight.io/rest-api-standards-do-they-even-exist)
+[Best-practices-for-rest-api-design](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
 
-https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
-https://blog.stoplight.io/rest-api-standards-do-they-even-exist
 https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
 
 #### Uniform Resource Identifier (URI)
@@ -195,7 +196,7 @@ It's used to update partial informations from a specific resource.
 
 
 ##### Common HTTP Status Codes
-
+[Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 200: This code indicates that the request is successful.
 <code>return Ok()</code>
 
