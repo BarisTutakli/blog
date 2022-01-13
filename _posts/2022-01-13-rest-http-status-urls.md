@@ -139,17 +139,7 @@ For instance, here i get data of a specified product having id = 2.</p>
 
 ##### HEAD
 <p style='text-align: justify;'>
-It's similar to GET method, but the response does not have a message-body. It's often used to retrieve meta-data. Meta-data might contain information about keywords, page description, author, viewport...
-This is an example of response headers:
-
- content-encoding: gzip </br>
- content-type: text/plain; charset=utf-8 </br>
- date: Thu13 Jan 2022 07:46:51 GMT </br>
- server: Microsoft-IIS/10.0 </br>
- transfer-encoding: chunked </br>
- vary: Accept-Encoding </br>
- x-powered-by: ASP.NET 
- 
+It's similar to GET method, but the response does not have a message-body. It's often used to retrieve meta-data. Meta-data might contain information about keywords, content-type, page description, author, viewport,content-encoding...
 </p>
 
 ##### PUT
@@ -196,7 +186,6 @@ It's used to update partial informations from a specific resource.
 
 
 ##### Common HTTP Status Codes
-[Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 200: This code indicates that the request is successful.
 <code>return Ok()</code>
 
@@ -247,6 +236,7 @@ return NotFound();
 
 ```
 503: Service Unavailable
+
 ```c#
 [HttpGet("/admin")]
 public IActionResult HowToReturn503()
@@ -257,4 +247,4 @@ public IActionResult HowToReturn503()
 
 ```
 
-
+[Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
